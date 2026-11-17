@@ -1,0 +1,56 @@
+"""Configuration constants for Neon Rogue."""
+
+# Map dimensions
+MAP_WIDTH = 80
+MAP_HEIGHT = 24
+
+# UI layout dimensions
+TOP_BAR_HEIGHT = 2
+LOG_LINES = 4
+MIN_TERM_WIDTH = MAP_WIDTH
+MIN_TERM_HEIGHT = TOP_BAR_HEIGHT + MAP_HEIGHT + LOG_LINES  # 30 rows
+
+# Dungeon generation parameters
+MAX_ROOMS = 12
+ROOM_MIN_SIZE = 5
+ROOM_MAX_SIZE = 12
+FOV_RADIUS = 8
+
+# Tile characters
+TILE_WALL = "#"
+TILE_FLOOR = "."
+TILE_STAIRS = ">"
+
+# Visibility states
+VIS_UNEXPLORED = 0
+VIS_EXPLORED = 1
+VIS_VISIBLE = 2
+
+# Entity symbols
+SYMBOL_PLAYER = "@"
+SYMBOL_GOBLIN = "g"
+SYMBOL_STALKER = "s"
+SYMBOL_WARDEN = "W"
+SYMBOL_MEDKIT = "+"
+SYMBOL_BLADE = "/"
+
+# Player base stats
+PLAYER_BASE_HP = 30
+PLAYER_BASE_ATK = 6
+PLAYER_BASE_DEF = 2
+
+# Color pair IDs
+COLOR_PLAYER = 1
+COLOR_GOBLIN = 2
+COLOR_STALKER = 3
+COLOR_WARDEN = 4
+COLOR_MEDKIT = 5
+COLOR_BLADE = 6
+COLOR_WALL_LIT = 7
+COLOR_FLOOR_LIT = 8
+COLOR_FOG = 9
+COLOR_STAIRS = 10
+COLOR_HUD = 11
+COLOR_HP_HIGH = 12
+COLOR_HP_LOW = 13
+COLOR_LOG = 14
